@@ -1,0 +1,25 @@
+{
+"declarations":
+{
+  "structures":["[A-Z] ([A-Z]|[0-9])* '_s'"],
+  "Unions"    :["[A-Z] ([A-Z]|[0-9])* '_u'"],
+  "Enumerations":["[A-Z] ([A-Z]|[0-9])* '_e'"],
+  "Type"      :["[A-Z] ([A-Z]|[0-9])* '_t'"],
+  "Functions": ["_func'[A-Z] ([A-Z]|[0-9])*"]
+},
+"global":
+  {
+ "Struct variables": ["'g_'( [a-zA-Z] | [0-9] )+ "],
+ "Union variables": ["'g_'( [a-zA-Z] | [0-9] )+ "],
+ "Enumeration variables": ["'g_'( [a-zA-Z] | [0-9] )+ "],
+ "other variables":["'g_'( [a-zA-Z] | [0-9] )+"]
+},
+  "local":
+  {
+ "Function parameters" :["'l_'( [a-zA-Z] | [0-9] )+"],
+ "Struct variables"   : ["'l_'( [a-zA-Z] | [0-9] )+ "],
+"Union variables"     :  ["'l_'( [a-zA-Z] | [0-9] )+"],
+ "Enumeration variables": ["'l_'( [a-zA-Z] | [0-9] )+"],
+"other variables": ["'l_'( [a-zA-Z] | [0-9] )+"]
+  }
+}
